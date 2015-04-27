@@ -13,7 +13,7 @@
 	</object>
 	<!--<![endif]-->
 </object>
-```
+``` 
 2. 若不考虑 W3C 校验，可统一使用 EMBED 元素嵌入 Flash，这样可以避免因参数不统一导致的兼容性问题。 
 `<embed src="movie-name.swf" type="application/x-shockwave-flash" width="" height="" quality="high" />`
 3. 若必须使用 OBJECT 嵌套 EMBED 元素这种混合方式，则要保证 Flash 文件 URL、为 Flash 传递的参数、宽度、高度、wmode 等参数保持统一。 
@@ -23,7 +23,7 @@
   <param name="quality" value="high" />
   <embed src="movie-name.swf" type="application/x-shockwave-flash" width="" height="" quality="high" />
 </object>
-```
+``` 
 4. 可以使用开源的 SWFObject 引入 Flash。 
 请参见[swfobject](http://code.google.com/p/swfobject/)  
 >参考资料：http://w3help.org/zh-cn/causes/HO8001
