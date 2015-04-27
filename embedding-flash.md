@@ -15,7 +15,7 @@
 </object>
 ``` 
 2.若不考虑 W3C 校验，可统一使用 EMBED 元素嵌入 Flash，这样可以避免因参数不统一导致的兼容性问题。 
-`<embed src="movie-name.swf" type="application/x-shockwave-flash" width="" height="" quality="high" />`
+`<embed src="movie-name.swf" type="application/x-shockwave-flash" width="" height="" quality="high" />` 
 3.若必须使用 OBJECT 嵌套 EMBED 元素这种混合方式，则要保证 Flash 文件 URL、为 Flash 传递的参数、宽度、高度、wmode 等参数保持统一。 
 ```html
 <object width="" height="" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000">
