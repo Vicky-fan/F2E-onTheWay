@@ -25,5 +25,5 @@
 </object>
 ```
 4. 可以使用开源的 SWFObject 引入 Flash。 
-请参见[swfobject](http://code.google.com/p/swfobject/) 
+请参见[swfobject](http://code.google.com/p/swfobject/)  
 >参考资料：http://w3help.org/zh-cn/causes/HO8001
