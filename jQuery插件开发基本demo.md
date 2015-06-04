@@ -2,13 +2,13 @@ jQuery插件开发基本demo
 ```html
 <ul>
 	<li>
-		<a href="http://www.webo.com/liuwayong">我的微博</a>
+		<a href="http://vicky-fan.github.io/">我的微博</a>
 	</li>
 	<li>
-		<a href="http://http://www.cnblogs.com/Wayou/">我的博客</a>
+		<a href="http://vicky-fan.github.io/">我的博客</a>
 	</li>
 	<li>
-		<a href="http://wayouliu.duapp.com/">我的小站</a>
+		<a href="http://vicky-fan.github.io/">我的小站</a>
 	</li>
 </ul>
 <p>这是p标签不是a标签，我不会受影响</p>
