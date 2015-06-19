@@ -5,6 +5,7 @@
 2. [url.format](#2-url.format)
 3. [url.resolve](#1-url.resolve)
 ---
+
 ```javascript
 $ node
 > url
@@ -13,9 +14,9 @@ $ node
   resolveObject: [Function: urlResolveObject],
   format: [Function: urlFormat],
   Url: [Function: Url] }
-  ```
+```
 
-##1 url.parse
+##1. url.parse
 > url.parse(urlStr[, parseQueryString][, slashesDenoteHost])
 > Take a URL string, and return an object.
 
@@ -101,7 +102,7 @@ $ node
 
 
 
-##2 url.format
+##2. url.format
 > url.format(urlObj)
 > Take a parsed URL object, and return a formatted URL string.
 
@@ -122,7 +123,7 @@ $ node
   ```
   生成一个完整的合法的url地址
 
-  ## 3 url.resolve
+  ##3. url.resolve
   > url.resolve(from, to)
   > Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
 
