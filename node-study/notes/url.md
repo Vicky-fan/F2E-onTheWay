@@ -124,7 +124,7 @@ $ node
   ```
   生成一个完整的合法的url地址
 
-<h2 id="2">3. url.resolve</h2>
+<h2 id="3">3. url.resolve</h2>
 > url.resolve(from, to)
 > Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
 
