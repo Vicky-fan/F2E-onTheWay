@@ -1,9 +1,15 @@
 #URL
 
 ## 目录：
+<<<<<<< HEAD
 1. [url.parse](#1- url.parse)
 2. [url.format](#2- url.format)
 3. [url.resolve](#3- url.resolve)
+=======
+[1. url.parse](#1)
+[2. url.format](#2)
+[3. url.resolve](#3)
+>>>>>>> format
 ---
 
 ```javascript
@@ -16,7 +22,7 @@ $ node
   Url: [Function: Url] }
 ```
 
-##1. url.parse
+<h2 id="1">1. url.parse</h2>
 > url.parse(urlStr[, parseQueryString][, slashesDenoteHost])
 > Take a URL string, and return an object.
 
@@ -100,7 +106,7 @@ $ node
   href: '//nodejs.org/api/url.html' }
   ```
 
-##2. url.format
+<h2 id="2">2. url.format</h2>
 > url.format(urlObj)
 > Take a parsed URL object, and return a formatted URL string.
 
@@ -122,7 +128,11 @@ $ node
   生成一个完整的合法的url地址
 
 
+<<<<<<< HEAD
 ##3. url.resolve
+=======
+<h2 id="2">3. url.resolve</h2>
+>>>>>>> format
 > url.resolve(from, to)
 > Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
 
