@@ -1,9 +1,9 @@
 #URL
 
 ## 目录：
-1. [url.parse](#1-url.parse)
-2. [url.format](#2-url.format)
-3. [url.resolve](#3-url.resolve)
+1. [url.parse](#1- url.parse)
+2. [url.format](#2- url.format)
+3. [url.resolve](#3- url.resolve)
 ---
 
 ```javascript
@@ -122,14 +122,14 @@ $ node
   生成一个完整的合法的url地址
 
 
-  ##3. url.resolve
-  > url.resolve(from, to)
-  > Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
+##3. url.resolve
+> url.resolve(from, to)
+> Take a base URL, and a href URL, and resolve them as a browser would for an anchor tag.
 
-  ```javascript
-  > url.resolve('https://nodejs.org/', '/api/url.html')
+```javascript
+> url.resolve('https://nodejs.org/', '/api/url.html')
 'https://nodejs.org/api/url.html'
-  ```
+```
 
 
 
