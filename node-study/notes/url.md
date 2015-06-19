@@ -3,7 +3,7 @@
 ## 目录：
 1. [url.parse](#1-url.parse)
 2. [url.format](#2-url.format)
-3. [url.resolve](#1-url.resolve)
+3. [url.resolve](#3-url.resolve)
 ---
 
 ```javascript
@@ -100,8 +100,6 @@ $ node
   href: '//nodejs.org/api/url.html' }
   ```
 
-
-
 ##2. url.format
 > url.format(urlObj)
 > Take a parsed URL object, and return a formatted URL string.
@@ -122,6 +120,7 @@ $ node
 'https://nodejs.org:8080/api/url.html?frome=google&course=node#floor1'
   ```
   生成一个完整的合法的url地址
+
 
   ##3. url.resolve
   > url.resolve(from, to)
