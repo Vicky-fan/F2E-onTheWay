@@ -1,5 +1,4 @@
-#HTTP
-####1.HTTP请求报头的具体含意
+#HTTP请求报头的具体含意
 ```html
 Accept-Language: zh-cn,zh;q=0.5
 Accept-Charset: GB2312,utf-8;q=0.7,*;q=0.7
