@@ -36,7 +36,7 @@ app.get('/', function (req, sres, next) {
 				var $ = cheerio.load(topicHtml);
 
 				return ({
-					title: $('topic_full_title').text().trim(),
+					title: $('.topic_full_title').text().trim(),
 					href: topicUrl,
 					comment1: $('.reply_content').eq(0).text().trim(),
 					point: $('.big').text().trim()
