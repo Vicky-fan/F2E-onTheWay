@@ -1,0 +1,62 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>hello world</title>
+	<h2>JSX 语法</h2>
+	<div id="app1"></div>
+	<hr>
+	<div id="app2"></div>
+	<hr>
+	<div id="app3"></div>
+
+	<script src="build/react.js"></script>
+	<script src="build/JSXTransformer.js"></script>
+	<script type="text/jsx">
+	//app1
+	var Example1 = React.createClass({
+		handleClick: function () {
+			alert('hello,你刚刚点了我一下');
+		},
+		render: function () {
+			return <p onClick={this.handleClick}>hello {this.props.name}</p>
+		}
+	});
+	React.render(
+		<Example1 name="vicky" />,
+		document.getElementById('app1'),
+		function () {
+			console.log('渲染完毕！');
+		}
+	);
+	//app2
+	var names = ['vicky', 'rod', 'ricko'];
+
+	React.render(
+		<ol>
+		{
+			names.map(function (name) {
+				return	<li>hello {name}!</li>
+			})
+		}
+		</ol>,
+		document.getElementById('app2')
+	);
+
+	//app3
+	var arr = [
+		<p>hello text1</p>,
+		<p>hello text2</p>,
+		<p>hello text3</p>
+	];
+	React.render(
+		<div>{arr}</div>,
+		document.getElementById('app3')
+	);
+	
+	</script>
+</head>
+<body>
+	
