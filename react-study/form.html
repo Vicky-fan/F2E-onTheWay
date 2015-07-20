@@ -1,0 +1,75 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>form</title>
+	<div id="app"></div>
+	
+	<script src="build/react.js"></script>
+	<script src="build/JSXTransformer.js"></script>
+	<script type="text/jsx">
+	var FormApp = React.createClass({
+		getInitialState: function () {
+			return {
+				inputValue: "input value",
+				selectValue: "C",
+				radioValue: "B",
+				textareaValue: 'text of textarea'
+			}
+		},
+		handleSubmit: function (e) {
+			e.preventDefault();
+			console.log('提交ing……');
+			console.log(e.target);
+		},
+		handleInput: function (e) {
+			this.setState({
+				inputValue: e.target.value
+			})
+		},
+		handleSelect: function (e) {
+			this.setState({
+				selectValue: e.target.value
+			})
+		},
+		render: function () {
+			return (
+				<form onSubmit={this.handleSubmit}>
+					<input type="text" value={this.state.inputValue} onChange={this.handleInput} />
+					<p>选项</p>
+					<select value={this.state.selectValue} onChange={this.handleSelect}>
+						<option value="A">A</option>
+						<option value="B">B</option>
+						<option value="C">C</option>
+						<option value="D">D</option>
+						<option value="E">E</option>
+					</select>
+					<p>radio</p>
+					<input type="radio" name="opt" value="A" />A
+					<input type="radio" name="opt" value="B" defaultChecked/>B
+					<input type="radio" name="opt" value="C" />C
+					<p>checkbox</p>
+					<input type="checkbox" value="A" />A
+					<input type="checkbox" value="B" />B
+					<input type="checkbox" value="C" defaultChecked/>C
+					<input type="checkbox" value="D" />D
+					<p>textarea</p>
+					<textarea value={this.state.textareaValue}></textarea>
+					<button type="submit">提交</button>
+				</form>
+			)
+		}
+	});
+	React.render(
+		<FormApp />,
+		document.getElementById('app'),
+		function () {
+			console.log('渲染完毕！')
+		}
+	);
+	</script>
+</head>
+<body>
+	
