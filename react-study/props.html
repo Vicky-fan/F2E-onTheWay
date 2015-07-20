@@ -1,0 +1,66 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>props</title>
+	<h2>props</h2>
+	<div id="app"></div>
+
+	<script src="build/react.js"></script>
+	<script src="build/JSXTransformer.js"></script>
+	<script type="text/jsx">
+		var MesgBox = React.createClass({
+			getInitialState: function () {
+				return {					
+					msgTit: '你好，标题来自state',
+					subMsgs: [
+						'我会代码搬砖',
+						'以及花式搬砖',
+						'不说了，工头叫我回去搬砖了。。。。。。'
+					]
+				}
+			},
+			render: function () {
+				return (
+					<div>
+						<p>{this.state.msgTit}</p>
+						<SubMesg mesgs={this.state.subMsgs} />
+					</div>
+				)
+
+			}	
+		});
+		var SubMesg = React.createClass({
+			propTypes: function () {
+				mesgs: React.PropTypes.array.isRequired
+			},
+			getDefaultProps: function () {
+				return {
+					mesgs: ['这是默认props']
+				}
+			},
+			render: function () {
+				var msgs = [];
+				this.props.mesgs.forEach(function (msg, index) {
+					msgs.push(
+						<p>码农说: {msg}</p>
+					) 
+				});
+				return (
+					<p>{msgs}</p>
+				)
+			}
+		});
+		React.render(
+			<MesgBox />,
+			document.getElementById('app'),
+			function () {
+				console.log('渲染完毕');
+			}
+		);
+	</script>
+</head>
+<body>
+	

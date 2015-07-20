@@ -7,6 +7,7 @@
 	<title>hello world</title>
 	<h2>组件嵌套</h2>
 	<div id="app1"></div>
+	<div id="app2"></div>
 	<hr>
 	
 
@@ -14,6 +15,41 @@
 	<script src="build/JSXTransformer.js"></script>
 	<script type="text/jsx">
 	//app1
+	var MessageBox = React.createClass({
+		render: function () {
+			var subMsgs = [];
+			for( var i = 0; i < 10; i++) {
+				subMsgs.push(<SubMessage key={i}/>);
+			}
+			return (
+				<div>				
+					<p>Hello, {this.props.name}</p>
+					{subMsgs}
+				</div>
+			)
+		}
+	});
+	var SubMessage = React.createClass({
+		render: function () {
+			return (
+				<div>
+					<p>写代码很有意思哦</p>
+					<Footer />
+				</div>
+			)
+		}
+	});
+	var Footer = React.createClass({
+		render: function () {
+			return (
+				<small>因为我创造了价值</small>
+			)
+		}
+	});
+	React.render(
+		<MessageBox name="vikcy" />,
+		document.getElementById('app1')
+	);
 	
 	
 	</script>
