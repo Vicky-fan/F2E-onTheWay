@@ -1,0 +1,25 @@
+{
+  "name": "webpack",
+  "version": "0.0.0",
+  "description": "webpack and gulp demo",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "webpack",
+    "gulp"
+  ],
+  "author": "Vicky",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-webpack": "^1.5.0",
+    "browser-sync": "^2.8.2",
+    "react": "^0.13.3",
+    "jsx-loader": "^0.13.2",
+    "babel-core": "^5.8.22",
+    "webpack": "^1.11.0",
+    "babel-loader": "^5.3.2"
+  }
+}
